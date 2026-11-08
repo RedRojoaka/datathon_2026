@@ -15,7 +15,7 @@ FILES = ("agent.py", "equity.py", "game.py", "evaluator.py",
          "judge_engine.py", "test_agent.py", "test_strategy.py", "benchmark.py",
          "practice_bot.py", "package_submission.py", "requirements.txt", "requirements-dev.txt", ".gitignore",
          ".dockerignore", "START_HERE.md", "STRATEGY.md", "SUBMISSION.md",
-         "VALIDATION.md", "AI_DISCLOSURE.md")
+         "VALIDATION.md", "AI_DISCLOSURE.md", "DEVPOST.md")
 
 
 def main():

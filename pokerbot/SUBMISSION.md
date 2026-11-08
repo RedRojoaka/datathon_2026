@@ -1,13 +1,15 @@
 # Heads Up submission — DataLarp
 
-The participant guide requires **team registration**, followed by a public GitHub repository and the exact commit to build. A video, Tableau workbook, Gemini API integration, and strategy write-up are not listed as requirements for this challenge. The accompanying documentation is supporting material.
+The participant guide requires **team registration**, followed by a public GitHub repository and the exact commit to build. **The organizers also require a Devpost submission.** Create a separate poker project using [the prepared Devpost entry](DEVPOST.md), and complete any additional required fields in the event's form.
 
 | Form field | Value |
 | --- | --- |
 | Team name | **DataLarp** |
 | GitHub repository | **https://github.com/RedRojoaka/datathon_2026** |
-| Commit SHA | Full 40-character SHA from the tested, committed, pushed version; obtain it with `git rev-parse HEAD` |
+| Submitted bot SHA | `b3515aade1a437694345a24b93e1d9b5ee643abc` |
 | Bot identity | SteadyAce |
+
+Keep this already-submitted bot SHA unless intentionally submitting a new bot version. Later documentation commits do not change what the tournament builds from that SHA.
 
 [Mandatory registration](https://docs.google.com/forms/d/e/1FAIpQLSeVRUzERWDfrri24U6kA2tUbjT0530IwudYokp3ZpoxfXVAwA/viewform?usp=sharing&ouid=100967425964110292916) and [submission form](https://forms.gle/Jx9RWE5VgR8dbbcj9) are taken from page 1 of the supplied participant guide. Use the same team name as your registration. The guide contains a placeholder for the deadline, so confirm the actual deadline with the event organizers.
 
@@ -19,6 +21,7 @@ The participant guide requires **team registration**, followed by a public GitHu
 4. Review the poker changes, commit them to the existing repository, and push. Do not push the nested `heads-up-bundle` checkout: its origin points at the organizers' repository.
 5. Obtain the full SHA with `git rev-parse HEAD`. Confirm that exact commit is visible in the public repository. Re-run the build check if the runtime files changed after validation.
 6. Submit **DataLarp**, the repository URL above, and that SHA in the submission form. Registration and form submission require the user's own event identity; the code does not submit forms automatically.
+7. Submit the separate SteadyAce project to the event on **Devpost** using [DEVPOST.md](DEVPOST.md). Confirm that it is submitted rather than saved only as a draft.
 
 Suggested explicit staging paths after reviewing `git diff` and `git status`:
 
