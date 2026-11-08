@@ -32,7 +32,7 @@ The challenge requirements are in the supplied dashboard-royale/GUIDE.md, sectio
 - Machine performance: https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Datathon_26_Dashboard_1_v2/Dashboard2
 - Tracked guests and loyalty: https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Dashboard_3_17941211263630/TrackedGuestsLoyalty
 - Operations decisions and Gemini briefing: https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Dashboard_4_TD2026/BudgetandActions
-- Video: recording pending; add the final judge-accessible video URL before submission.
+- Video walkthrough (unlisted): https://youtu.be/FzcawMNrNaI — verify signed-out playback and a duration at most two minutes before submission.
 - Source code: https://github.com/RedRojoaka/datathon_2026 — reviewed source snapshot is being prepared; confirm the files have been pushed before submitting this link.
 
 The generated submission archive does not include your manually created Tableau workbooks or video. Add their final links or files. The existing Sites preview is private and is not a substitute for a judge-accessible link.

@@ -22,7 +22,7 @@ No Tableau installation or API key is needed to view the published dashboards.
 | 3 — Tracked Guests & Loyalty | [Tracked guest outcomes, concentration, and comps](https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Dashboard_3_17941211263630/TrackedGuestsLoyalty) |
 | 4 — Budget Decisions | [Budget scenarios, proposed action, and saved Gemini explanation](https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Dashboard_4_TD2026/BudgetandActions) |
 
-**Video:** recording pending. The [two-minute recording checklist](VIDEO_RECORDING.md) and [narration script](royale-lab/submission/VIDEO_SCRIPT.md) are ready. Add the final judge-accessible video link here before submitting on Devpost.
+**Video walkthrough:** [Watch the unlisted project demonstration](https://youtu.be/FzcawMNrNaI). The [recording checklist](VIDEO_RECORDING.md) and [narration script](royale-lab/submission/VIDEO_SCRIPT.md) document the presentation plan.
 
 ## Findings and proposed action
 
