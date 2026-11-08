@@ -1,0 +1,709 @@
+{
+  "created_utc": "2026-11-08T08:11:42.624638+00:00",
+  "source_sha256": {
+    "agent.py": "6742318371cabd3a7e8319fdf7a81c1064ed18c6dde714175c703e20c519b45f",
+    "requirements.txt": "30c7368cf71fc526e5edbb47a3c51f37566b2b041cab5bea796fd71dae73ea95",
+    "pokerbot/agent.py": "e0f943b181d09de2b75afd06eadefabf3a790270c9d11a291d68a55543734759",
+    "pokerbot/equity.py": "90628b410ba430de896bb0e06fa742fe98ad54aaf7b0c85529ec9fbfeb1c631c",
+    "pokerbot/game.py": "bc00e3c2d1bf64cbd36bf5553dae218767f11b20f388e5c417d989919877f2db",
+    "pokerbot/evaluator.py": "e2a151a4c41828a035030f490c91b81015d04bc209abfb860ca3d0dce649e0b4",
+    "pokerbot/requirements.txt": "30c7368cf71fc526e5edbb47a3c51f37566b2b041cab5bea796fd71dae73ea95"
+  },
+  "deals_per_half": 1000,
+  "fresh_process_each_half": true,
+  "matches": [
+    {
+      "opponent": "random",
+      "seed": "101",
+      "result_file": "random-seed101.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 7.444,
+      "ci": [
+        6.2380146017786435,
+        8.649985398221355
+      ],
+      "stats": [
+        {
+          "calls": 3519,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.079724,
+          "wall_seconds": 2.04673
+        },
+        {
+          "calls": 3587,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.085858,
+          "wall_seconds": 1.938606
+        }
+      ]
+    },
+    {
+      "opponent": "random",
+      "seed": "202",
+      "result_file": "random-seed202.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 7.8745,
+      "ci": [
+        6.613301220186999,
+        9.135698779813001
+      ],
+      "stats": [
+        {
+          "calls": 3542,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.083022,
+          "wall_seconds": 2.066597
+        },
+        {
+          "calls": 3440,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.08578,
+          "wall_seconds": 2.046851
+        }
+      ]
+    },
+    {
+      "opponent": "random",
+      "seed": "303",
+      "result_file": "random-seed303.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 8.8855,
+      "ci": [
+        7.723143428519948,
+        10.047856571480054
+      ],
+      "stats": [
+        {
+          "calls": 3580,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.077234,
+          "wall_seconds": 1.931681
+        },
+        {
+          "calls": 3550,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.09395,
+          "wall_seconds": 2.114923
+        }
+      ]
+    },
+    {
+      "opponent": "always_half",
+      "seed": "101",
+      "result_file": "always_half-seed101.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 13.3195,
+      "ci": [
+        12.136658478672576,
+        14.502341521327423
+      ],
+      "stats": [
+        {
+          "calls": 5014,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.117726,
+          "wall_seconds": 2.646042
+        },
+        {
+          "calls": 5054,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.137832,
+          "wall_seconds": 2.70883
+        }
+      ]
+    },
+    {
+      "opponent": "always_half",
+      "seed": "202",
+      "result_file": "always_half-seed202.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 14.1005,
+      "ci": [
+        12.881510067746852,
+        15.319489932253148
+      ],
+      "stats": [
+        {
+          "calls": 5040,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.125215,
+          "wall_seconds": 2.713328
+        },
+        {
+          "calls": 4997,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.111873,
+          "wall_seconds": 2.658932
+        }
+      ]
+    },
+    {
+      "opponent": "always_half",
+      "seed": "303",
+      "result_file": "always_half-seed303.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 14.931,
+      "ci": [
+        13.74867701799543,
+        16.11332298200457
+      ],
+      "stats": [
+        {
+          "calls": 5063,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.164807,
+          "wall_seconds": 2.859659
+        },
+        {
+          "calls": 5038,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.118406,
+          "wall_seconds": 2.680076
+        }
+      ]
+    },
+    {
+      "opponent": "always_pot",
+      "seed": "101",
+      "result_file": "always_pot-seed101.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 7.5715,
+      "ci": [
+        5.996999591643014,
+        9.146000408356986
+      ],
+      "stats": [
+        {
+          "calls": 4021,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.099397,
+          "wall_seconds": 2.116371
+        },
+        {
+          "calls": 4023,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.104491,
+          "wall_seconds": 2.136112
+        }
+      ]
+    },
+    {
+      "opponent": "always_pot",
+      "seed": "202",
+      "result_file": "always_pot-seed202.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 8.9475,
+      "ci": [
+        7.3258009505469275,
+        10.569199049453072
+      ],
+      "stats": [
+        {
+          "calls": 3978,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.084883,
+          "wall_seconds": 1.908544
+        },
+        {
+          "calls": 3961,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.089732,
+          "wall_seconds": 1.909813
+        }
+      ]
+    },
+    {
+      "opponent": "always_pot",
+      "seed": "303",
+      "result_file": "always_pot-seed303.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 9.739,
+      "ci": [
+        8.181988237168392,
+        11.29601176283161
+      ],
+      "stats": [
+        {
+          "calls": 4042,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.09931,
+          "wall_seconds": 2.124026
+        },
+        {
+          "calls": 3966,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.097894,
+          "wall_seconds": 2.089765
+        }
+      ]
+    },
+    {
+      "opponent": "calling_station",
+      "seed": "101",
+      "result_file": "calling_station-seed101.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 7.8515,
+      "ci": [
+        7.1221003112268395,
+        8.58089968877316
+      ],
+      "stats": [
+        {
+          "calls": 3996,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.144737,
+          "wall_seconds": 3.132345
+        },
+        {
+          "calls": 3999,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.103067,
+          "wall_seconds": 3.103661
+        }
+      ]
+    },
+    {
+      "opponent": "calling_station",
+      "seed": "202",
+      "result_file": "calling_station-seed202.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 7.0735,
+      "ci": [
+        6.391847334874812,
+        7.7551526651251885
+      ],
+      "stats": [
+        {
+          "calls": 3999,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.113091,
+          "wall_seconds": 3.090217
+        },
+        {
+          "calls": 3996,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.131964,
+          "wall_seconds": 3.128165
+        }
+      ]
+    },
+    {
+      "opponent": "calling_station",
+      "seed": "303",
+      "result_file": "calling_station-seed303.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 7.586,
+      "ci": [
+        6.897329630662097,
+        8.274670369337903
+      ],
+      "stats": [
+        {
+          "calls": 4002,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.203388,
+          "wall_seconds": 3.281329
+        },
+        {
+          "calls": 3996,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.15048,
+          "wall_seconds": 3.177568
+        }
+      ]
+    },
+    {
+      "opponent": "surprise",
+      "seed": "101",
+      "result_file": "surprise-seed101.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 16.3315,
+      "ci": [
+        15.136614306825898,
+        17.5263856931741
+      ],
+      "stats": [
+        {
+          "calls": 4474,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.114653,
+          "wall_seconds": 2.960452
+        },
+        {
+          "calls": 4504,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.117106,
+          "wall_seconds": 3.056873
+        }
+      ]
+    },
+    {
+      "opponent": "surprise",
+      "seed": "202",
+      "result_file": "surprise-seed202.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 17.2065,
+      "ci": [
+        15.97739971807202,
+        18.435600281927975
+      ],
+      "stats": [
+        {
+          "calls": 4515,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.114831,
+          "wall_seconds": 3.020888
+        },
+        {
+          "calls": 4532,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.11385,
+          "wall_seconds": 2.739507
+        }
+      ]
+    },
+    {
+      "opponent": "surprise",
+      "seed": "303",
+      "result_file": "surprise-seed303.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 17.679,
+      "ci": [
+        16.46105973044874,
+        18.89694026955126
+      ],
+      "stats": [
+        {
+          "calls": 4550,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.110174,
+          "wall_seconds": 2.898483
+        },
+        {
+          "calls": 4492,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.114563,
+          "wall_seconds": 3.022126
+        }
+      ]
+    },
+    {
+      "opponent": "selective",
+      "seed": "101",
+      "result_file": "selective-seed101.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 4.9135,
+      "ci": [
+        4.078103177622012,
+        5.748896822377988
+      ],
+      "stats": [
+        {
+          "calls": 3829,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.08595,
+          "wall_seconds": 2.315001
+        },
+        {
+          "calls": 3763,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.068064,
+          "wall_seconds": 2.502562
+        }
+      ]
+    },
+    {
+      "opponent": "selective",
+      "seed": "202",
+      "result_file": "selective-seed202.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 5.3195,
+      "ci": [
+        4.481053637485131,
+        6.157946362514869
+      ],
+      "stats": [
+        {
+          "calls": 3798,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.100164,
+          "wall_seconds": 2.595001
+        },
+        {
+          "calls": 3760,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.09001,
+          "wall_seconds": 2.528319
+        }
+      ]
+    },
+    {
+      "opponent": "selective",
+      "seed": "303",
+      "result_file": "selective-seed303.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 5.313,
+      "ci": [
+        4.47412982132736,
+        6.151870178672639
+      ],
+      "stats": [
+        {
+          "calls": 3757,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.095763,
+          "wall_seconds": 2.536541
+        },
+        {
+          "calls": 3749,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.091641,
+          "wall_seconds": 2.513041
+        }
+      ]
+    },
+    {
+      "opponent": "equity",
+      "seed": "101",
+      "result_file": "equity-seed101.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 2.4435,
+      "ci": [
+        1.8834535223666613,
+        3.0035464776333383
+      ],
+      "stats": [
+        {
+          "calls": 3640,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.046434,
+          "wall_seconds": 2.524401
+        },
+        {
+          "calls": 3652,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.094608,
+          "wall_seconds": 2.6207
+        }
+      ]
+    },
+    {
+      "opponent": "equity",
+      "seed": "202",
+      "result_file": "equity-seed202.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 1.818,
+      "ci": [
+        1.338517649369483,
+        2.297482350630517
+      ],
+      "stats": [
+        {
+          "calls": 3573,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.075118,
+          "wall_seconds": 2.54577
+        },
+        {
+          "calls": 3571,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.108121,
+          "wall_seconds": 2.634818
+        }
+      ]
+    },
+    {
+      "opponent": "equity",
+      "seed": "303",
+      "result_file": "equity-seed303.json",
+      "verdict": "AGENT1_WIN",
+      "mean_bb": 1.935,
+      "ci": [
+        1.411044533790733,
+        2.458955466209267
+      ],
+      "stats": [
+        {
+          "calls": 3599,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.108071,
+          "wall_seconds": 2.633169
+        },
+        {
+          "calls": 3625,
+          "skipped_calls": 0,
+          "timed_out": false,
+          "errors": 0,
+          "forfeited": false,
+          "error_messages": [],
+          "time_seconds": 0.112781,
+          "wall_seconds": 2.615522
+        }
+      ]
+    }
+  ]
+}

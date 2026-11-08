@@ -1,0 +1,21 @@
+agent1 = DataLarp / SteadyAce (http://localhost:41695)
+agent2 = Challenges Team / AlwaysHalf (http://localhost:44341)
+
+Duplicate match: 1000 deals (2000 hands), seed 101
+agent1: +13.319 bb/deal  (std 19.08, stderr 0.603)
+Confidence interval (z=1.96): [+12.137, +14.502] bb/deal
+Reason: interval [+12.137, +14.502] is entirely above 0
+half1: agent1 +14638 chips, agent2 -14638 chips
+half2: agent1 +12001 chips, agent2 -12001 chips
+Faults:
+  agent1 half1: thinking 0.12s of 8s (wall 2.65s), calls 5014, errors 0
+  agent1 half2: thinking 0.14s of 8s (wall 2.71s), calls 5054, errors 0
+  agent2 half1: thinking 0.03s of 8s (wall 0.61s), calls 3642, errors 0
+  agent2 half2: thinking 0.02s of 8s (wall 0.62s), calls 3664, errors 0
+Speed: 2000 hands in 6.93s (289 hands/s)
+
+============================================================
+  VERDICT: AGENT1 WINS  (DataLarp / SteadyAce (http://localhost:41695))
+  Points: agent1 1, agent2 0
+============================================================
+RESULT: AGENT1_WIN

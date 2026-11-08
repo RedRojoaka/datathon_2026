@@ -1,0 +1,11 @@
+# Only the poker runtime enters the competition image, even in this shared repo.
+*
+!agent.py
+!requirements.txt
+!pokerbot/
+!pokerbot/requirements.txt
+!pokerbot/__init__.py
+!pokerbot/agent.py
+!pokerbot/equity.py
+!pokerbot/game.py
+!pokerbot/evaluator.py

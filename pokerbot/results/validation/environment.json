@@ -1,0 +1,27 @@
+{
+  "environment": "Linux ARM64 Docker on Apple Silicon; one CPU; 4 GB; network none; read-only root",
+  "runtime_image_id": "sha256:b28692becb6d921cca57c15070243d836ec16170731ae18ec54bf3a6f907576e",
+  "organizer_bundle_commit": "c83ab6eeb7660a2fd1fae7df224315d41fe985a9",
+  "source_sha256": {
+    "pokerbot/practice_bot.py": "0eecd493ba462edcc0fd2e6d4ea8c1b92dc3d9249318955ada7a788f57a756d2",
+    "pokerbot/test_agent.py": "8bf6041ae67b482fef8b098cbfdf9af8976e68ab9874140cb235e661d0dbf2da",
+    "pokerbot/test_strategy.py": "e4dfb0900016a0ffcf646cba5a684ae400ae022d74d9844657088986a91a5078",
+    "pokerbot/benchmark.py": "a62e4361baf4bab8a072a689f9f2bfae1148cf1d48b6ba0e5be1a11f85d7fc13",
+    "pokerbot/equity.py": "90628b410ba430de896bb0e06fa742fe98ad54aaf7b0c85529ec9fbfeb1c631c",
+    "pokerbot/game.py": "bc00e3c2d1bf64cbd36bf5553dae218767f11b20f388e5c417d989919877f2db",
+    "pokerbot/__init__.py": "a733eeffa42794be1f7428419ab7f13ce7784639a18f11caae65b9400c5ec9c7",
+    "pokerbot/agent.py": "e0f943b181d09de2b75afd06eadefabf3a790270c9d11a291d68a55543734759",
+    "pokerbot/judge_engine.py": "fa7a7e3fb49c09588cfcf0930a8e3f6c189e419dbc54263ae7d53b953223d422",
+    "pokerbot/package_submission.py": "3affdf2ea9d248eb3b67ee23c5dd31440b27cf7e5fbfb759127e2ec6d3e3c435",
+    "pokerbot/evaluator.py": "e2a151a4c41828a035030f490c91b81015d04bc209abfb860ca3d0dce649e0b4",
+    "pokerbot/baseline-bots/baseline_random.py": "1d620921cdf203ee6ceafac40e5d3e4d285c1dad5719d918ab93155351f6f329",
+    "pokerbot/baseline-bots/baseline_calling_station.py": "ad49dc67f8bd7391ecee1a84739ef7d037c8f73633805eac704c176fbd3b0a7b",
+    "pokerbot/baseline-bots/baseline_always_pot.py": "1de5afe4791510cbddc17ca442e6361e94d2bf41ba755bc15164b36ef042028e",
+    "pokerbot/baseline-bots/baseline_always_half.py": "4788b85216b0fbf1351980fc1101140a446d2b4e14ff73378bc0ed7b2ef5fecf",
+    "docker/Dockerfile.agent": "6baea809885f97fd50187d437009bb9ac38d5d0855e29e71dcf1194b4c2ce186",
+    "docker/Dockerfile.base": "d54f26ad44236c8a90308286e7de703d9e8c3916e6baa77d3a6fc3c56ab04d15",
+    ".dockerignore": "95c391163460274520cb39a5d34b49e8dcd7710f2d38e8f83fb99b78bdb0df66",
+    "agent.py": "6742318371cabd3a7e8319fdf7a81c1064ed18c6dde714175c703e20c519b45f",
+    "requirements.txt": "30c7368cf71fc526e5edbb47a3c51f37566b2b041cab5bea796fd71dae73ea95"
+  }
+}

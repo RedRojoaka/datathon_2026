@@ -1,0 +1,134 @@
+
+==> Building the base image (poker-agent-base:local). The first time takes a few minutes...
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 5.06kB done
+#1 DONE 0.0s
+
+#2 [auth] library/python:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim
+#3 DONE 0.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+#5 resolve docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b done
+#5 DONE 0.0s
+
+#6 [4/8] RUN pip install --no-cache-dir numpy  && pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch  && pip freeze > /opt/poker/base-packages.txt
+#6 CACHED
+
+#7 [6/8] RUN find / -xdev -type f -perm /6000 -exec chmod a-s {} + 2>/dev/null || true
+#7 CACHED
+
+#8 [5/8] RUN groupadd --gid 10001 bot  && useradd --uid 10001 --gid 10001 --no-create-home --home-dir /tmp --shell /usr/sbin/nologin bot
+#8 CACHED
+
+#9 [2/8] RUN apt-get update  && apt-get upgrade -y --no-install-recommends  && apt-get clean  && rm -rf /var/lib/apt/lists/*
+#9 CACHED
+
+#10 [7/8] WORKDIR /app
+#10 CACHED
+
+#11 [3/8] RUN mkdir -p /opt/poker  && pip install --no-cache-dir "fastapi==0.156.1" "uvicorn==0.54.0"  && pip freeze > /opt/poker/constraints.txt
+#11 CACHED
+
+#12 [8/8] RUN chmod 0755 /app /opt/poker && chmod 0644 /opt/poker/*.txt
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:b32297ed0f3d23da1ffd6e97ba4ea3597a2bd033ae319316f9b7e812469b1ba2 done
+#13 exporting config sha256:ad0aaab4f174cd24c33b273c60cea7bf9415ba99e6ab2ef93a9608a3c41e424f done
+#13 exporting attestation manifest sha256:3b3dfe1503d1044eaa5b0d37ecd43467bdae376b5a3f300352fe6291aa3fdaf9 done
+#13 exporting manifest list sha256:1ad57e3de268991f691d8bcb393e2380b3c38f91002e79428a95b198b45bb893 done
+#13 naming to docker.io/library/poker-agent-base:local done
+#13 unpacking to docker.io/library/poker-agent-base:local done
+#13 DONE 0.0s
+
+==> Building your bot on top of the base image...
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.agent
+#1 transferring dockerfile: 3.12kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/poker-agent-base:local
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 293B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 529.89kB done
+#4 DONE 0.0s
+
+#5 [stage-0 1/7] FROM docker.io/library/poker-agent-base:local@sha256:1ad57e3de268991f691d8bcb393e2380b3c38f91002e79428a95b198b45bb893
+#5 resolve docker.io/library/poker-agent-base:local@sha256:1ad57e3de268991f691d8bcb393e2380b3c38f91002e79428a95b198b45bb893 done
+#5 DONE 0.0s
+
+#6 [stage-0 2/7] WORKDIR /app
+#6 DONE 0.0s
+
+#7 [stage-0 3/7] COPY requirements.txt /app/requirements.txt
+#7 DONE 0.0s
+
+#8 [stage-0 4/7] RUN --mount=type=cache,target=/var/cache/pip     PIP_CACHE_DIR=/var/cache/pip pip install         -c /opt/poker/constraints.txt         --extra-index-url https://download.pytorch.org/whl/cpu         -r requirements.txt
+#8 0.514 Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cpu
+#8 0.515 Requirement already satisfied: fastapi==0.156.1 in /usr/local/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (0.156.1)
+#8 0.515 Requirement already satisfied: uvicorn==0.54.0 in /usr/local/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (0.54.0)
+#8 0.515 Requirement already satisfied: numpy in /usr/local/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (2.5.4)
+#8 0.517 Requirement already satisfied: starlette>=0.46.0 in /usr/local/lib/python3.12/site-packages (from fastapi==0.156.1->-r requirements.txt (line 1)) (1.10.0)
+#8 0.517 Requirement already satisfied: pydantic>=2.9.0 in /usr/local/lib/python3.12/site-packages (from fastapi==0.156.1->-r requirements.txt (line 1)) (2.14.3)
+#8 0.517 Requirement already satisfied: typing-extensions>=4.8.0 in /usr/local/lib/python3.12/site-packages (from fastapi==0.156.1->-r requirements.txt (line 1)) (4.16.0)
+#8 0.517 Requirement already satisfied: typing-inspection>=0.4.2 in /usr/local/lib/python3.12/site-packages (from fastapi==0.156.1->-r requirements.txt (line 1)) (0.4.5)
+#8 0.517 Requirement already satisfied: annotated-doc>=0.0.2 in /usr/local/lib/python3.12/site-packages (from fastapi==0.156.1->-r requirements.txt (line 1)) (0.0.5)
+#8 0.518 Requirement already satisfied: opentelemetry-api>=1.44.0 in /usr/local/lib/python3.12/site-packages (from fastapi==0.156.1->-r requirements.txt (line 1)) (1.45.2)
+#8 0.518 Requirement already satisfied: click>=7.0 in /usr/local/lib/python3.12/site-packages (from uvicorn==0.54.0->-r requirements.txt (line 2)) (8.5.1)
+#8 0.518 Requirement already satisfied: h11>=0.8 in /usr/local/lib/python3.12/site-packages (from uvicorn==0.54.0->-r requirements.txt (line 2)) (0.16.0)
+#8 0.520 Requirement already satisfied: annotated-types>=0.6.0 in /usr/local/lib/python3.12/site-packages (from pydantic>=2.9.0->fastapi==0.156.1->-r requirements.txt (line 1)) (0.8.0)
+#8 0.520 Requirement already satisfied: pydantic-core==2.50.4 in /usr/local/lib/python3.12/site-packages (from pydantic>=2.9.0->fastapi==0.156.1->-r requirements.txt (line 1)) (2.50.4)
+#8 0.521 Requirement already satisfied: anyio<5,>=4.0.0 in /usr/local/lib/python3.12/site-packages (from starlette>=0.46.0->fastapi==0.156.1->-r requirements.txt (line 1)) (4.16.0)
+#8 0.522 Requirement already satisfied: idna>=2.8 in /usr/local/lib/python3.12/site-packages (from anyio<5,>=4.0.0->starlette>=0.46.0->fastapi==0.156.1->-r requirements.txt (line 1)) (3.20)
+#8 DONE 0.6s
+
+#9 [stage-0 5/7] COPY . /app
+#9 DONE 0.0s
+
+#10 [stage-0 6/7] RUN chown -R root:root /app  && chmod -R a+rX,go-w /app  && find /app /usr/local -xdev -type f -perm /6000 -exec chmod a-s {} +
+#10 DONE 0.2s
+
+#11 [stage-0 7/7] RUN if [ ! -f /app/agent.py ]; then         echo "agent.py is missing from the image (check your .dockerignore)" >&2; exit 1;     fi
+#11 DONE 0.1s
+
+#12 exporting to image
+#12 exporting layers 0.0s done
+#12 exporting manifest sha256:4aa1cd5eb89ecf849429cdf171d6ad15f98f577d37743c85d7dd195d0921875b done
+#12 exporting config sha256:ec3a5c4ae9133ccfc7be61f80498c566e1328c2cdfae99c3078a1fad6217484a done
+#12 exporting attestation manifest sha256:636ad08df1add73af9e8bfbf80ef6254aef0a6edd1083b928d55789fe991fe5b done
+#12 exporting manifest list sha256:b28692becb6d921cca57c15070243d836ec16170731ae18ec54bf3a6f907576e done
+#12 naming to docker.io/library/poker-agent-check:latest done
+#12 unpacking to docker.io/library/poker-agent-check:latest 0.0s done
+#12 DONE 0.1s
+
+==> Checking the size...
+    your bot adds 1 MB on top of the base (cap: 3072 MB)
+
+==> Starting your bot like the tournament does, then running the smoke test...
+  ok  GET / answered after 0.5 s: DataLarp / SteadyAce
+  ok  POST /new-half worked
+  ok  /act preflop, button to act: CHECK_CALL in 11 ms
+  ok  /act preflop, facing a pot raise: CHECK_CALL in 2 ms
+  ok  /act flop, first to act: CHECK_CALL in 1 ms
+  ok  /act flop, facing an all-in (only FOLD or CHECK_CALL): CHECK_CALL in 1 ms
+  ok  /act river, facing a half-pot bet: FOLD in 2 ms
+  ok  POST /hand-end worked
+SMOKE TEST PASSED
+
+ALL CHECKS PASSED. Commit and push, then submit your full commit SHA (git rev-parse HEAD).

@@ -1,4 +1,13 @@
-# The Gilded Ace — Decisions Beyond the Bottom Ten
+# Datathon 2026 — Dashboard Royale and Heads Up
+
+| Project | Source and instructions |
+| --- | --- |
+| Heads Up poker bot — **DataLarp / SteadyAce** | [Poker bot setup](pokerbot/README.md), [strategy](pokerbot/STRATEGY.md), [validation](pokerbot/VALIDATION.md), [submission](pokerbot/SUBMISSION.md) |
+| Dashboard Royale — **The Gilded Ace** | Dashboard links and analysis below; source in [`royale-lab/`](royale-lab/) |
+
+The poker project is kept in `pokerbot/`. The root `agent.py` and `requirements.txt` are its required tournament entry files. Its Docker image includes only poker runtime files. In the original workspace, edit `heads-up-bundle/agent.py` and run `python3 refresh_poker_source.py` to refresh the public source copy.
+
+## The Gilded Ace — Decisions Beyond the Bottom Ten
 
 Dashboard Royale entry for Datathon 2026. Four Tableau dashboards combine demand forecasting, exposure-adjusted machine analysis, tracked-player outcomes, loyalty costs, and a priced July operating plan. The casino and its data are fictional/synthetic; January–June 2025 is the observed period and July 1–30, 2025 is the planning horizon.
 
