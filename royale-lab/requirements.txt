@@ -1,0 +1,4 @@
+pandas>=2.2,<4
+numpy>=2,<3
+pyarrow>=18,<30
+plotly>=6,<7

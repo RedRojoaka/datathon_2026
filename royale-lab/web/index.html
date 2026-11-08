@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#153c35">
+  <title>The Gilded Ace · Decision Room</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script defer src="assets/plotly.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#briefing" aria-label="The Gilded Ace home"><span class="brand-mark">A<span>♦</span></span><span>THE GILDED ACE<small>DECISION ROOM</small></span></a>
+    <div class="side-caption">FLOOR INTELLIGENCE / 2025</div>
+    <nav aria-label="Dashboard views" id="navigation">
+      <button class="nav-item active" data-page="briefing"><span>01</span> Executive briefing</button>
+      <button class="nav-item" data-page="forecast"><span>02</span> Demand & forecast</button>
+      <button class="nav-item" data-page="machines"><span>03</span> Machine health</button>
+      <button class="nav-item" data-page="guests"><span>04</span> Guests & loyalty</button>
+      <button class="nav-item" data-page="budget"><span>05</span> Budget lab</button>
+      <button class="nav-item" data-page="evidence"><span>06</span> Evidence & downloads</button>
+    </nav>
+    <div class="side-bottom"><span class="status-dot"></span> Fictional casino · synthetic data<p>Jan–Jun observations<br>July 1–30 planning horizon</p><a href="ai.html">Gemini management briefing ↗</a><p><a href="downloads/START_HERE.md">Setup & working guide ↗</a></p></div>
+  </aside>
+  <main>
+    <header class="topbar"><div><span class="eyebrow">MANAGEMENT ANALYTICS</span><span class="top-divider">/</span><span id="breadcrumb">Executive briefing</span></div><div class="top-actions"><span class="data-badge" id="release-badge">Loading data…</span><button class="button subtle" id="print-button">Print briefing</button></div></header>
+    <div id="loading" class="loading"><div class="loading-dot"></div><h1>Preparing the decision room</h1><p>Loading local analysis and audited chart inputs. No AI calls are made.</p></div>
+    <div id="error" class="error-panel" hidden></div>
+    <div id="app" hidden>
+      <section class="page-heading"><div><div class="eyebrow" id="page-kicker">THE NEXT 30 DAYS</div><h1 id="page-title">Plan for demand.<br><em>Keep the decision grounded.</em></h1><p id="page-description">A July planning view backed by six months of wagering, availability and player outcomes.</p></div><div class="as-of"><span>PLANNING AS OF</span><strong>30 Jun 2025</strong><small>Historical challenge scenario</small></div></section>
+      <section class="filters" id="floor-filters" aria-label="Historical floor filters">
+        <label>From<input type="date" id="start-date" value="2025-01-01" min="2025-01-01" max="2025-06-30"></label>
+        <label>Through<input type="date" id="end-date" value="2025-06-30" min="2025-01-01" max="2025-06-30"></label>
+        <label>Zone<select id="zone-filter"><option value="">All zones</option></select></label>
+        <label>Bank<select id="bank-filter"><option value="">All banks</option></select></label>
+        <label>Manufacturer<select id="maker-filter"><option value="">All manufacturers</option></select></label>
+        <button class="button subtle" id="reset-filters">Reset</button>
+        <span class="filter-note" id="filter-note"></span>
+      </section>
+      <section id="view-briefing" class="view active"></section>
+      <section id="view-forecast" class="view"></section>
+      <section id="view-machines" class="view"></section>
+      <section id="view-guests" class="view"></section>
+      <section id="view-budget" class="view"></section>
+      <section id="view-evidence" class="view"></section>
+      <footer><span>THE GILDED ACE / DASHBOARD ROYALE</span><span>Contribution includes supplied costs only. Forecasts and scenario effects are estimates.</span></footer>
+    </div>
+  </main>
+  <dialog id="explanation-dialog"><form method="dialog"><button class="close-dialog" aria-label="Close explanation">×</button></form><div class="eyebrow">EVIDENCE EXPLANATION</div><h2 id="explanation-title"></h2><div id="explanation-content"></div><div class="ai-controls"><button class="button primary" id="gemini-explain">Explain with Gemini</button><span id="gemini-status">Gemini is optional and off by default.</span></div></dialog>
+  <div id="live-status" class="sr-only" aria-live="polite"></div>
+</body>
+</html>

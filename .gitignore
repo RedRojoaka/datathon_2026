@@ -1,1 +1,51 @@
 datathon/
+
+# Local secrets and credential stores (also applies in subdirectories).
+.env
+.env.*
+!.env.example
+.gemini-key-*
+.runtime/
+*.sqlite*
+.aws/
+.ssh/
+.codex/
+.secrets/
+secrets/
+.git-credentials
+.netrc
+credentials.json
+credentials-*.json
+client_secret*.json
+service-account*.json
+service_account*.json
+*-service-account.json
+token.json
+tokens.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local environments, caches, and operating-system files.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.DS_Store
+*.log
+
+# Tableau recovery files and standalone extracts; final workbooks remain allowed.
+*.twbr
+*.hyper
+~$*
+
+# Local challenge checkouts have their own Git histories and large data bundles.
+# The reviewed Dashboard Royale source snapshot is published in /royale-lab/.
+/dashboard-royale/
+/heads-up-bundle/
+/challenge-data/
+/.vscode/
+/royale-lab/dist/

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#153c35">
+  <title>Gemini Briefing · The Gilded Ace</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="ai.css">
+  <script defer src="ai.js"></script>
+</head>
+<body>
+  <header><a href="index.html" class="brand"><span class="ace">A<span>♦</span></span><span>THE GILDED ACE<small>GEMINI MANAGEMENT BRIEFING</small></span></a><a class="back-link" href="index.html">Open the dashboard ↗</a></header>
+  <main>
+    <section class="hero"><div><div class="eyebrow">EXPLAIN THE EVIDENCE</div><h1>Your numbers.<br><em>A clearer briefing.</em></h1><p>Gemini translates audited analysis into a short management explanation, with its evidence and limitations alongside it.</p></div><div class="connection"><span id="ai-connection">Checking briefing mode…</span><small id="ai-usage">No generation runs when this page opens.</small></div></section>
+    <div class="scope-banner">Fictional casino · Jan–Jun 2025 analysis · July 1–30 planning. The brief uses the declared evidence below; selections in your Tableau workbook are separate.</div>
+    <section class="workspace">
+      <aside><h2>Choose a management question</h2><div id="ai-topics" role="group" aria-label="Briefing topics"></div><div class="allowance"><span class="eyebrow">YOUR GEMINI ALLOWANCE</span><strong id="ai-reserved">$0.0000</strong><p id="ai-allowance-note">At most $0.0037 reserved per new explanation; cached responses reuse the result.</p><small>4,000 input tokens · 1,000 total output/thinking tokens · no automatic retries</small></div></aside>
+      <section class="brief-panel" aria-label="Management briefing">
+        <div class="brief-heading"><div><span class="eyebrow">MANAGEMENT QUESTION</span><h2 id="ai-question">Loading evidence…</h2></div><span id="ai-badge" class="badge">EVIDENCE FIRST</span></div>
+        <p id="ai-scope" class="scope-note"></p>
+        <div class="generate-row"><button class="button primary" id="ai-generate" disabled>Generate with Gemini</button><span id="ai-call-note">No API calls have been made by opening this page.</span></div>
+        <div id="ai-error" class="error" role="alert" hidden></div>
+        <div id="ai-answer" class="answer" aria-live="polite">Choose a topic to inspect its evidence.</div>
+        <p id="ai-provenance" class="provenance"></p>
+        <div class="export-row"><button class="button" id="ai-copy" disabled>Copy explanation</button><button class="button" id="ai-download" disabled>Download Tableau CSV</button><button class="button" id="ai-markdown" disabled>Download briefing</button></div>
+        <details id="ai-facts"><summary>Trace the supplied facts and alternative explanations</summary><div id="ai-evidence"></div></details>
+      </section>
+    </section>
+    <details id="ai-setup" class="setup"><summary>Connect Gemini locally and add the briefing to Tableau</summary>
+      <div class="setup-grid"><section><h2>1. Create your key</h2><p>Open <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener noreferrer">Google AI Studio → API keys</a>. Create a key in the project associated with your $10 Gemini credits.</p><p>Keep the key in your local setup. Confirm credit eligibility, disable automatic reload, and use a project spending cap as an additional safeguard.</p></section>
+      <section><h2>2. Start the local briefing</h2><p>From the <code>royale-lab</code> folder, run:</p><pre>python3 gemini_setup.py
+python3 serve.py --enable-gemini</pre><p>The first command hides the key while you enter it. Open <code>http://127.0.0.1:8501/ai.html</code>, choose a topic and click Generate.</p></section>
+      <section><h2>3. Use the result in Tableau</h2><p>Successful briefings automatically save to <code>tableau_support/gemini_insights.csv</code>. Add it through <strong>Data → New Data Source → Text File</strong>.</p><p>In a new sheet, put <strong>Explanation</strong> on Text and <strong>Topic</strong> on Filters. Label the sheet “Gemini-generated explanation” and keep its evidence IDs and scope visible.</p></section></div>
+      <p class="hosting-note">This page's hosted copy can display exported briefings. Generating a new response uses the local Python server. No API key is embedded in Tableau or the web page.</p>
+    </details>
+    <footer><span>THE GILDED ACE / DASHBOARD ROYALE</span><span>Review generated wording against the evidence before presenting. All model and financial calculations remain reproducible in Python.</span></footer>
+  </main>
+</body>
+</html>

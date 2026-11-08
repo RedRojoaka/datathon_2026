@@ -1,0 +1,42 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.DS_Store
+*.log
+
+# Keep the example template, never a configured key or its temporary save file.
+.env
+.env.*
+!.env.example
+.gemini-key-*
+.runtime/
+*.sqlite*
+
+# Other local credentials must not enter a future GitHub upload.
+.aws/
+.ssh/
+.codex/
+.secrets/
+secrets/
+.git-credentials
+.netrc
+credentials.json
+credentials-*.json
+client_secret*.json
+service-account*.json
+service_account*.json
+*-service-account.json
+token.json
+tokens.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Tableau recovery files and standalone extracts; final workbooks remain allowed.
+*.twbr
+*.hyper
+~$*

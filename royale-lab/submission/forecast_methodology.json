@@ -1,0 +1,92 @@
+{
+  "selected_model": "weekday",
+  "selected_label": "Weekday averages",
+  "selection_rule": "Lowest pooled MAE over March and April fixed-origin 30-day folds; selected before May.",
+  "train_start": "2025-01-01",
+  "train_end": "2025-04-30",
+  "test_start": "2025-05-01",
+  "test_end": "2025-06-30",
+  "test_days": 61,
+  "future_start": "2025-07-01",
+  "future_end": "2025-07-30",
+  "radius_90_usd": 137491.44999999995,
+  "test_coverage_90": 0.9180327868852459,
+  "assumed_theo_hold": 0.09443907277059747,
+  "assumed_fnb_margin_per_day_usd": 7522.913333333333,
+  "assumed_supplied_costs_per_day_usd": 15579.116000000002,
+  "metrics": [
+    {
+      "model": "mean",
+      "label": "Constant training mean",
+      "selected": false,
+      "cv_mae_usd": 214324.94561111106,
+      "test_mae_usd": 218258.0969262295,
+      "test_rmse_usd": 251436.49525999752,
+      "test_bias_usd": 28936.540177595576
+    },
+    {
+      "model": "weekday",
+      "label": "Weekday averages",
+      "selected": true,
+      "cv_mae_usd": 57551.941384437305,
+      "test_mae_usd": 68698.55169827497,
+      "test_rmse_usd": 86421.66282450434,
+      "test_bias_usd": 39285.62299367837
+    },
+    {
+      "model": "weekday_trend",
+      "label": "Weekday + linear trend",
+      "selected": false,
+      "cv_mae_usd": 79330.20889846268,
+      "test_mae_usd": 96657.82867411374,
+      "test_rmse_usd": 112140.34664420255,
+      "test_bias_usd": 79446.34291986712
+    }
+  ],
+  "cv_folds": [
+    {
+      "origin": "2025-03-01",
+      "model": "mean",
+      "label": "Constant training mean",
+      "mae_usd": 225218.87833333336,
+      "days": 30
+    },
+    {
+      "origin": "2025-03-01",
+      "model": "weekday",
+      "label": "Weekday averages",
+      "mae_usd": 74388.84905092591,
+      "days": 30
+    },
+    {
+      "origin": "2025-03-01",
+      "model": "weekday_trend",
+      "label": "Weekday + linear trend",
+      "mae_usd": 99305.36022427726,
+      "days": 30
+    },
+    {
+      "origin": "2025-04-01",
+      "model": "mean",
+      "label": "Constant training mean",
+      "mae_usd": 203431.0128888889,
+      "days": 30
+    },
+    {
+      "origin": "2025-04-01",
+      "model": "weekday",
+      "label": "Weekday averages",
+      "mae_usd": 40715.0337179487,
+      "days": 30
+    },
+    {
+      "origin": "2025-04-01",
+      "model": "weekday_trend",
+      "label": "Weekday + linear trend",
+      "mae_usd": 59355.05757264805,
+      "days": 30
+    }
+  ],
+  "interval_note": "Nominal 90% daily demand error bands from pre-May validation errors. Serial dependence, changing demand and only two folds limit coverage. They are not a 90% interval for the 30-day total or realized profit.",
+  "limitations": "Only six months; no annual seasonality. No later-published tourism, observed future payouts, or holdout lags are used. July is an as-of-June-30 scenario in the fictional challenge."
+}

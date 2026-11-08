@@ -1,0 +1,66 @@
+{
+  "release": "0.9.0-draft",
+  "inputs": [
+    {
+      "file": "1_prepared_views/prepared_daily_view.parquet",
+      "sha256": "dcf59b0a3ad7dceeff1de7ae5a86e313c42300f3f3b73c652df86cd60fd0eebb",
+      "rows": 56110
+    },
+    {
+      "file": "1_prepared_views/property_day.parquet",
+      "sha256": "8e3df1d0662e27cd964d72287bac224e9f2395600ad8bece9ce4f8b17f5457d5",
+      "rows": 181
+    },
+    {
+      "file": "1_prepared_views/player_period.parquet",
+      "sha256": "e7ddbbafb2ddd9a24ec8bb7b5c5a9c79a17ff0d379011a4f35054be03a0fac2f",
+      "rows": 148893
+    },
+    {
+      "file": "2_machine_decision/machine_day.parquet",
+      "sha256": "8bd1ebdb1dd2f695eef8585da0d3d5b6785d7c050e29ae52b14c2123c7c33176",
+      "rows": 56110
+    },
+    {
+      "file": "2_machine_decision/game_math.parquet",
+      "sha256": "b6ebc7040d7120dd20be89c5f6ba264d650be9e4bfd03530a2e0abfb3f4f931d",
+      "rows": 10
+    },
+    {
+      "file": "2_machine_decision/floor_locations.parquet",
+      "sha256": "47958de9cb8cfbba7cfeab41eb015f8e840e1572f1a2f3d2ed6b6d494de43c39",
+      "rows": 378
+    },
+    {
+      "file": "2_machine_decision/action_catalog.parquet",
+      "sha256": "d4583febb24d0528feb90f8fa81bb4c2910abba94def7d8c06b96897814d2842",
+      "rows": 13
+    },
+    {
+      "file": "4_context/events.parquet",
+      "sha256": "f55b840d409bd56991ce1afe401239a67ec646d3a540217701dc7b4ad88607f8",
+      "rows": 8
+    },
+    {
+      "file": "2_machine_decision/floor_walkways.parquet",
+      "sha256": "9cdb3c0205d179dea91ef6c71948913c14dd214e95c76805aeb8624efa07854c",
+      "rows": 10
+    }
+  ],
+  "checks": {
+    "machine_day_unique": true,
+    "player_month_unique": true,
+    "machine_accounting": true,
+    "player_sign": true,
+    "exposure_bounds": true,
+    "inactive_rows_excluded": true,
+    "reconciles_property_coin_in_usd": true,
+    "reconciles_property_payout_usd": true,
+    "reconciles_property_house_win_usd": true,
+    "reconciles_property_theo_usd": true,
+    "property_contribution_no_double_comp": true,
+    "forecast_test_after_training": true,
+    "future_nonnegative": true,
+    "demand_bridge_reconciles": true
+  }
+}
