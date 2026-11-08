@@ -17,7 +17,7 @@ No Tableau installation or API key is needed to view the published dashboards.
 
 | Dashboard | Public interactive view |
 | --- | --- |
-| 1 — Demand & July Outlook | [Executive outlook and forecast validation](https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Datathon_26_Dashboard_1_v2/ExecutiveOutlook) |
+| 1 — Demand & July Outlook | [Executive outlook and forecast validation](https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Datathon_26_Dashboard_1_v3/ExecutiveOutlook) |
 | 2 — Machine Performance | [Machine performance and availability](https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Datathon_26_Dashboard_1_v2/Dashboard2) |
 | 3 — Tracked Guests & Loyalty | [Tracked guest outcomes, concentration, and comps](https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Dashboard_3_17941211263630/TrackedGuestsLoyalty) |
 | 4 — Budget Decisions | [Budget scenarios, proposed action, and saved Gemini explanation](https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Dashboard_4_TD2026/BudgetandActions) |

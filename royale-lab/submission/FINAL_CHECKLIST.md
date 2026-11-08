@@ -28,7 +28,7 @@ The challenge requirements are in the supplied dashboard-royale/GUIDE.md, sectio
 
 ## Links to fill in
 
-- Executive outlook: https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Datathon_26_Dashboard_1_v2/ExecutiveOutlook
+- Executive outlook: https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Datathon_26_Dashboard_1_v3/ExecutiveOutlook
 - Machine performance: https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Datathon_26_Dashboard_1_v2/Dashboard2
 - Tracked guests and loyalty: https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Dashboard_3_17941211263630/TrackedGuestsLoyalty
 - Operations decisions and Gemini briefing: https://public.tableau.com/app/profile/alejandro.rojo4194/viz/Dashboard_4_TD2026/BudgetandActions
